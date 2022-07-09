@@ -4,85 +4,19 @@ This project implements a distributed auctioning system using Java Remote Method
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+1. In the server directory type: javac Server.java (Ensure that IAuctionSystem.java exists in the server directory).
 
-### Prerequisites
+2. In the client directory type: javac Client.java
 
-What things you need to install the software and how to install them
+3. Now we can run the client and the server. First, however, we need to run the RMI registry. You will need three command prompt windows to run this example. Two should be in the server directory; one in the client directory.
 
-```
-Give examples
-```
+4. In the first command prompt issue the command: rmiregistry
 
-### Installing
+5. Now, in the second command prompt issue the command: java Server
 
-A step by step series of examples that tell you how to get a development env running
+6. Finally, in the client command prompt issue the command: java Client 17
 
-Say what the step will be
+Note that the line LocateRegistry.getRegistry("localhost") in the client code indicates the address of the host machine on which the server code is running; if this is a different machine to that of the client then you'll need to change this parameter to be the IP address of the remote host.
 
-```
-Give the example
-```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
