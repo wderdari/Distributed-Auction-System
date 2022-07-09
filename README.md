@@ -1,6 +1,6 @@
 # Distributed Auctioning System
 
-This project implements a distributed auctioning system using Java Remote Method Invocation (RMI). Clients can both place items on auction as well as buy items with a user registration process in place for authentication. Fault tolerance is also present in this project with active replication used to ensure the system operates with only one server present.
+This project implements a distributed auctioning system using Java Remote Method Invocation (RMI). Clients can both place items on auction as well as buy items with a user registration process in place for authentication. Fault tolerance is also present in this project with active server replication used to ensure the system operates with only one server present. 
 
 ## Getting Started
 
