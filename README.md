@@ -16,7 +16,7 @@ This project implements a distributed auctioning system using Java Remote Method
 
 6. Finally, in the client command prompt issue the command: java Client 17
 
-Note that the line LocateRegistry.getRegistry("localhost") in the client code indicates the address of the host machine on which the server code is running; if this is a different machine to that of the client then you'll need to change this parameter to be the IP address of the remote host.
+  Note that the line LocateRegistry.getRegistry("localhost") in the client code indicates the address of the host machine on which the server code is running; if this is a different machine to that of the client then you'll need to change this parameter to be the IP address of the remote host.
 
 
 
