@@ -8,7 +8,7 @@ This project implements a distributed auctioning system using Java Remote Method
 
 2. In the client directory type: javac Client.java
 
-3. Now we can run the client and the server. First, however, we need to run the RMI registry. You will need three CLI windows to run this example. Two should be in the server directory; one in the client directory.
+3. Now we can run the client and the server. First, we need to run the RMI registry. You will need three CLI windows to run this example. Two should be in the server directory and one in the client directory.
 
 4. In the first command prompt issue the command: rmiregistry
 
